@@ -1,0 +1,1304 @@
+/*
+background-color: #53ff436f;     verde claro del nav
+
+background-color: rgba(247, 247, 247, 0.875);  Gris del fondo
+
+background-color: #4b7d46;  color de footer
+
+background-color: rgb(29, 36, 29);   verde oscuro de los article de venta y desv
+*/
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    
+    /*aqui limpio los border, padding y margin de mi archivo*/
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(38, 35, 35);
+}
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none
+}
+
+
+main{
+    background-color: rgba(247, 247, 247, 0.875);
+    
+    
+    
+}
+#contenedor-menu  li{
+    background-color: #53ff436f; 
+}
+
+
+
+figure{
+    background-color: rgba(24, 13, 13, 0);
+}
+
+h1{
+   
+   color: rgb(0, 0, 0);
+}
+
+h2{
+    color: rgb(0, 0, 0);
+}
+
+h3{
+    color: rgb(0, 0, 0);
+}
+
+nav li a{
+    color: rgb(255, 255, 255);
+    
+}
+
+main section{
+    background-color: rgba(247, 247, 247, 0.875);
+}
+.seccion1{
+   
+    color: white;
+    background-color: rgb(29, 36, 29);
+    
+    
+}
+.seccion1 .articleDeSection1, .seccion1 .articleDeSection1 h2, .seccion1 .articleDeSection1 h3, .seccion2 .articleDeSection1 h2, .seccion2 .articleDeSection1 h3{
+    color: rgb(38, 35, 35);
+}
+article{
+    background-color: rgba(247, 247, 247, 0.875);    
+}
+
+.color{
+    background-color: rgba(247, 247, 247, 0.875);  
+}
+
+footer{
+    background-color: #4b7d46;
+    text-align: center;
+}
+
+.formulario{
+    background-color:rgb(38, 35, 35); ;
+}
+
+fieldset {
+    background-color: rgb(255, 69, 69);
+}
+table{
+    background-color: rgb(255, 69, 69);
+}
+caption{
+    background-color: rgb(255, 69, 69);
+}
+td, th{
+    border:dotted rgb(24, 22, 22) 0.2em
+}
+table{
+    border: solid rgb(255, 69, 69) 0.2em;
+}
+footer p{
+    color: rgb(0, 0, 0);
+}
+
+.galeriaImagenes figure{
+    background-color: rgba(29, 36, 29, 0);
+}
+
+.galeriaImagenes figure figcaption{
+    color: rgb(0, 0, 0);
+}
+
+.seccion2 .articleDeSection2 h3{
+    color: black;
+}
+
+.articleDeSection1 .tituloCarrito{
+    color: white;
+}
+
+
+/*----------------------------------Sitio de pantallas mayores que 320--------------------------*/
+@media all and (min-width:320px) {
+    header figure {
+        padding: 0.5em;
+        width: 17em;
+        margin:0 auto ;
+        vertical-align: middle;
+        height: 9em;
+        padding-top: 15em;
+    }
+
+    header img {
+        width: 100%;
+        height: 100%;
+        border: 1em;
+        border-radius: 0.2em;
+    }
+    
+    header h1{
+        text-align: center;
+        font-size: 9vw;
+        padding: 0.5em;
+        padding-top: 6em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #53ff43dd;
+    }
+    
+    header{        
+        background-image: url("../img/Fondo1.jpg");
+        height: 75vh;
+    }
+
+    .textoDeLaPar{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    
+    .logomarvel {
+        margin: 0 auto;
+        width: 20em;
+        padding: 1em;
+    }
+    
+    .logomarvel img {
+        width: 100%;
+        border: 1em;
+        border-radius: 0.2em;
+    }
+
+    section p{
+        padding: 0.9em;
+    }
+
+    .seccion2 .articleDeSection2 ul li p{
+        padding: 0em;
+    } 
+
+    .seccion2 .articleDeSection2 ul .listass{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .seccion2 .articleDeSection2 ul .listass article p, .seccion2 .articleDeSection2 ul .listass article a {
+        display: inline-block;
+        vertical-align: middle;        
+    }
+
+    .seccion1{
+        column-count: 1 ;
+        text-align: justify;
+        column-gap: 3%;
+        padding: 0.3em;
+        text-indent: 0.2em;
+        margin: 4vh;             
+    }
+
+    .seccion1 h2{
+        color: white;
+    }
+
+    .seccion2{
+        column-count: 1 ;
+        text-align: justify;
+        column-gap: 3%;
+        padding: 1em;
+        text-indent: 0.2em;
+    }
+
+    .seccion2 h2{
+        text-align:center ;
+    }
+
+    .seccion2 ul, .seccion2 h3{
+        padding-left: 4em ;
+    }
+
+    .seccion2 ul{
+        padding-bottom: 2em;
+    }
+   
+    #contenedor-menu img{        
+        width: 4.4em;
+    }
+
+    #contenedor-menu #cerrar{        
+        display: none;
+    }
+
+    #contenedor-menu ul {
+        height: 0;
+        overflow: hidden;
+        transition: 1.5s;    
+    }
+
+    #contenedor-menu:target #cerrar{        
+        display:block;
+        width: 3.3em;
+        padding: 0.6em;       
+    } 
+
+    #contenedor-menu:target #abrir{
+        
+        display: none;
+    }
+    
+    #contenedor-menu:target #navegacion{
+        transition: 0.8s;
+        height: 16em; 
+    }
+
+    #contenedor-menu:target #navegacion2{
+        transition: 0.8s;
+        height: 6em; 
+    }
+
+    nav li {
+        display: block;        
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        width: 100vw;
+        /*vertical-align: middle;*/        
+    }
+
+    nav a {
+        display: block;
+        font-size: 1em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+
+    .nav1{
+        width: 12em;
+        margin-left: 2em ;
+    }
+    .nav1 ul{          
+        display: flex;
+        flex-direction: row;    
+        padding: 0em; 
+    }
+
+    .nav1  li  {
+        font-size: 0.6em;
+    }
+
+    .nav1  li a{
+        padding: 0em;         
+    }
+    
+    #contenedor-menu #contenedor-enlaces li :hover, #contenedor-menu #contenedor-enlaces li :focus{
+       background-color: rgb(29, 36, 29); 
+        transition: 0.5s;
+    }
+
+    .secciongeneral #contenedor-menu #contenedor-enlaces #navegacion2 img{
+        width: 2.4em;
+        height: 4vh;        
+    }
+    
+    .articleDeSection2 h1{
+        color: rgb(38, 35, 35);
+        font-size: 1.7em;
+        padding: 0.5em;
+    }
+
+    .articleDeSection2 p{
+        text-align: justify;
+    }
+
+    .articleDeSection1{
+        background-color: rgb(29, 36, 29);   
+        
+    }
+
+    .articleDeSection1 p, .seccion1 .articleDeSection1 h2{
+        color: white;
+    }
+
+    .seccion1 .articleDeSection1 h2{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .seccion2 .articleDeSection1{
+        border: 0.4em;
+        border-radius: 2%;
+    }
+
+    .seccion2 .articleDeSection1 h2{
+        color: white;
+        padding-top: 3%;
+    }
+    
+    .seccion2 .articleDeSection2 h3{
+        padding: 5%;
+    }
+
+    .seccion2 .articleDeSection2 ul li figure{
+        width: 1em;
+        height: 1em;
+        
+    }
+
+    .seccion2 .articleDeSection2 ul li  img{ 
+        width: 1em;
+        height: 1em;
+    }
+    
+
+    .seccion2 .articleDeSection2 ul li{ 
+        padding-bottom: 0.4em;
+        font-size: 1em;
+    }
+
+    .seccion3 .articleDeSection3 ul li{
+        display: flex;
+        flex-direction: row;
+    }
+    .seccion3 .articleDeSection3 ul li input[type=number]{
+        margin: 1.5e    m;
+        height: 5vh;
+        width: 6em;
+        text-align: center;
+    }
+
+    .seccion3 .articleDeSection3 ul li .parrafo{
+        width: 8em;
+    }
+
+    .seccion3 .articleDeSection3 ul li p{
+        width: 4em;
+    }
+    .seccion3 .articleDeSection3 ul li img{
+        width: 1.4em;
+        height: 3vh;
+        padding: 0.4em;
+    }
+
+    .seccion3 .articleDeSection1 h2{
+        text-align: center;
+        padding: 1em;
+        margin: 1em;
+        
+    }
+    
+    .seccion3 .articleDeSection3{
+        width: 24em;
+        margin: 0 auto;
+        border: 0.3em solid rgb(50, 50, 50);
+        border-radius: 3%;
+        padding-right: 1em;
+        
+    }
+
+    .seccion3 .botonsin {
+        width: 24em;
+        margin: 0 auto;
+        border: 0.3em solid rgb(50, 50, 50);
+        border-radius: 10%;
+        padding-right: 1em;
+        text-align: center;
+        padding: 0.5em;
+        background-color: rgb(50, 50, 50);
+        color: white;
+    }
+    
+    .seccion3 .botonsin a{
+        display: block;
+        color: white;
+    }
+    
+    .seccion3 .articleDeSection2 .enlace2 {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       padding: 1em;
+       padding-left: 4vw;
+    } 
+
+    .seccion3 .articleDeSection2 .enlace2 .figurita{
+        padding-left: 1em;
+        color: black;
+        font-size: 1.2em;
+        
+    } 
+    
+    section .articleDeSection2 .imagen1{
+        width: 90vw;
+        height: 46vh;
+        margin: 0auto;
+        padding-left: 3vw;
+    }
+
+    
+    section .articleDeSection2 .imagen1 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer h2{
+        padding: 0.5em;
+        font-size: 2em;
+    }
+
+    footer h3{
+        width: 18em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer section{
+        display: flex;
+        flex-direction:column;
+
+    }
+
+    footer{
+        padding-top: 1em;
+        padding-bottom: 0.5em;  
+    }
+
+
+    footer section .articledefooter1{
+        background-color: rgba(50, 50, 50, 0);
+        margin: 0 auto; 
+        text-align: justify;
+        font-size: 0.7em;
+      
+    }
+
+    footer section .articledefooter1 article{
+        background-color: rgba(0, 255, 255, 0);
+        padding-left: 8em;
+    }
+
+    footer section .articledefooter1 p{
+        font-size: 1.3em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+
+    footer section .articledefooter1 article a img, footer section .articledefooter1 article p{
+        display: inline;
+        vertical-align: middle;
+        
+    }
+
+    footer section .articledefooter1 article{
+        padding-top: 1em;
+        background-color: rgba(250, 235, 215, 0);
+    }
+
+    footer section .footerimg figure{
+        width: 55vw;
+        height: 30vh;
+        padding-top: 1em;
+        
+    }
+
+    footer section .footerimg{
+        background-color: rgba(250, 235, 215, 0);
+        margin: 0 auto;
+    }
+
+
+    footer section .footerimg figure img{
+        width: 100%;
+        height: 100%;
+        border: 1em;
+        border-radius: 1em;
+    }
+
+    
+
+    /*------------------Galeria de Imagenes responsive para 320px----------------*/
+    
+    .galeriaImagenes{
+        display: block;
+    }
+
+    .galeriaImagenes figure{
+        width: 65%;
+        height: 20%;
+        margin: 1em auto;
+        border: 0.1em solid rgb(29, 36, 29);;
+        border-radius: 0.5em;
+        padding: 0.08em;
+        
+    }
+
+    .galeriaImagenes figure img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5em 0.5em 0em 0em;
+    }
+
+    .galeriaImagenes figure figcaption{
+        padding-bottom: 0.4em;
+        font-size: 110%;
+        text-align: center;
+        
+    }
+
+    .galeriaImagenes figure figcaption .negrita{
+        
+        font-size: 180%;
+    }
+
+    .galeriaImagenes figure .botonsuma{
+        width: 2em;        
+        text-align: center;
+        font-size: 2em;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 27vw;
+    }
+
+    .galeriaImagenes figure .botondeenvio{
+        color: white;
+        width: 98%;
+        height: 6vh;
+        background-color: #4b7d46;
+        margin-left: 1%;
+        margin-bottom: 1%;
+        text-align: center;
+        font-size: 1.5em;
+        padding-top: 0.3em;
+    }
+
+    section .articleDeSection2 .imagen1{
+        width: 60vw;
+        height: 70vh;
+        margin: 0 auto;
+    }
+
+    /*------------------FIN  Galeria de Imagenes responsive para 320px----------------*/
+
+    /*------------------tabla responsive para 320px----------------*/
+    .figtabla{
+        width: 15em;
+        height: 30vh;
+        margin:0 auto;
+        vertical-align: middle;
+    }
+    .figtabla img{
+        width: 100%;
+        height: 100%;
+    }
+    table  {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.4em;
+        border-collapse: collapse;
+    }
+    table caption {
+        padding-bottom: 1em;
+    }
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.7em;
+        box-shadow: 0em 0.1em 0.1em gray;
+        
+        
+    }
+    table td{
+        padding: 0.3em 0.3em 0.3em 0em;
+        border-right: 0.5em;
+        
+    }
+ 
+    .titulostabla{
+        display: none;
+    }   
+    td:nth-of-type(1)::before{
+        content: "Portada:";
+        padding-left: 0.1em;
+        padding-top: 0.3em;
+        padding-right: 0.47em;
+        padding-bottom: 0.4em;
+    }
+
+    td:nth-of-type(2)::before {
+        content: "Titulo:";
+        padding-left: 0.1em;
+        padding-top: 0.25em;
+        padding-right: 0.9em;
+        padding-bottom: 0.37em;
+        
+    }
+
+    td:nth-of-type(3)::before {
+        content: "Estreno:";
+        padding-left: 0.1em;
+        padding-top: 0.31em;
+        padding-right: 0.3em;
+        padding-bottom: 0.42em;
+        
+     }
+     td:nth-of-type(4)::before {
+        content: "Fase:";
+        
+        
+        padding-left: 0.1em;
+        padding-top: 0.31em;
+        padding-right: 1.5em;
+        padding-bottom: 0.42em;
+        
+     }
+
+    td:nth-child(odd)::before, td:nth-child(even)::before{
+        background-color: rgb(202, 202, 202);
+        color: black;
+
+        margin-right: 0.3em;
+        
+        
+        
+        
+        
+    }
+    th:nth-child(odd)::before, th:nth-child(even)::before{
+        background-color: rgb(102, 51, 153);
+        color: red;
+        margin-right: 0.1em;
+        
+        
+    }
+/*----------------------formulario responsibe para 320px------------------*/
+
+/*
+    form {
+        width: 95%;
+        margin: 0 auto;        
+    }
+
+    
+    fieldset {
+        margin-bottom:  1em;
+        
+    }
+    form legend{
+        font-size: 2em;
+        padding-top: 0.6em;
+    }
+    
+    form input[type=text], form input[type=email], form input[type=date], form label{
+        display: block;
+        font-size: 1.5em;
+        padding: 0.6em;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    form .botonesformu {
+        display: block;
+        width: 97%;
+        padding: 0.3em;
+        font-size: 1.5em;
+        margin-bottom: 1vh;
+        margin: 0 auto;
+        margin: 0.2em;
+        
+    }
+    
+    form input[type=reset]{
+        padding-top: 0.4em;
+    }
+
+*/
+    .sectiondeliniciosecion{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .formulario {
+        width: 90%;
+        margin: 0 auto;  
+        padding-top: 1em;
+        border: 1em;
+        border-radius: 5%;
+        
+    }
+    /*
+    .formulario fieldset{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+    */
+
+    .formulario input[type=text], .formulario input[type=password], .formulario input[type=submit], .formulario input[type=tel], .formulario input[type=email]{
+        display: block;
+        font-size: 1em;
+        padding: 0.5em;
+        width: 85%;
+        
+        margin: 0.5em;
+        background-color: rgb(38, 35, 35);
+        
+    }
+
+    .formulario form label{
+        color: white;
+        padding-left: 1em;
+        
+        
+    }
+
+    .formulario input[type=text], .formulario input[type=password], .formulario input[type=tel], .formulario input[type=email]{
+        border-bottom: 0.06em rgb(255, 255, 255) solid;
+        color: white;
+    }
+    .formulario input[type=submit]{
+        margin: 0 auto;
+        
+        margin-top: 4%;
+        border: 0.06em solid rgb(255, 255, 255);
+        color: white;
+        font-size: 1.1em;
+    }
+
+    .formulario fieldset legend{
+        padding: 1em;
+        color: white;
+        font-size: 1.5em;
+
+    }
+
+    .formulario fieldset{
+        background-color: rgb(38, 35, 35);;
+        border-radius: 5%;
+    }
+
+    .formulario .form2 .boton2{
+        margin-bottom: 5%; 
+             
+    }
+
+    .formulario .form2{
+        padding-bottom: 1em;
+    }
+    .formulario form fieldset .boton1{
+        margin-top: 8%;        
+    }
+
+
+
+    
+    
+}
+/*------------------------------------Fin de Codigo perteneciente a 320px-------------------------------*/
+
+
+/*-----------------------------Inicio del Codigo para pantallas mayores a 768px-------------------------*/
+@media all and (min-width:768px){ 
+
+    header h1{
+        font-size: 6vw;
+    }
+
+    .articleDeSection2{
+        padding-top: 2em;
+
+    }
+
+    .articleDeSection2 h2{
+        color: black;
+        padding-left: 2em ;
+    }
+
+
+    
+    /*------------------ Galeria de Imagenes responsibe para 768px en adelante --------------------*/
+    .galeriaImagenes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .galeriaImagenes figure{
+        width: 24em;        
+        margin-bottom: 1em;
+    }
+
+    
+    
+
+    .galeriaImagenes figure img{
+        width: 95%;
+        height: 95%;
+        padding: 0.5em 0.5em 0em 0.5em;
+        margin: 0 auto; 
+    }
+
+    .galeriaImagenes figure .botonsuma{
+        margin-left:43%;
+    }
+
+    footer section .footerimg figure{
+        width: 35vw;
+        height: 30vh;
+        padding-top: 1em;
+    }
+
+    /*----------------------------Columnas responsibe para 768px en adelante--------------------------*/
+    
+   .seccion1 {           
+        column-count: 2;
+        text-align: justify;
+        column-gap: 1%;
+        padding: 0.7em;
+        text-indent: 0.2em;  
+    }   
+
+    .seccion1 h2{
+        text-align: center;
+    }   
+
+    .seccion2{
+        column-count: 2 ;
+        text-align: justify;
+        column-gap: 3%;
+        padding: 1em;
+        text-indent: 0.2em;
+    }
+}
+
+
+/*------------------------------------Fin de Codigo perteneciente a 768px -------------------------------*/
+
+
+/*-----------------------Inicio del codigo perteneciente a 1024px en adelante ---------------------------*/
+@media all and (min-width:1024px){
+
+    header {
+        height: 80vh;
+    }
+
+    header h1{
+        font-size: 6vw; 
+        margin-left: 1em;  
+        padding-left: 7.5em; 
+        padding-top: 2em;   
+    }
+
+    header figure{
+        padding-left: 20em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 20em;
+        height: 28vh;
+    }
+
+    header figure{
+        padding: 1.5em;
+        padding-left: 5em;
+    }
+    
+    header figure img {
+        border: 1em;
+        border-radius: 3%;
+        
+    }
+
+    header h1, header figure {
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+
+
+    .logomarvel {
+        float:none;
+        padding-top: 3em;
+        padding-bottom: 1em;
+        padding-left: 3em;
+        width: 36vw;
+    }
+
+    .s2 .logomarvel img{
+        border: 1em;
+        border-radius: 0.4em;
+    }
+
+    .textoDeLaPar{
+        font-size: 1.6em;
+    }
+
+    
+    .s2 article{
+        width: 56%;
+    }
+
+    
+    .s2 article, .s2 .logomarvel {
+        display:inline-block;
+        vertical-align: middle;
+        
+	}
+
+
+    .secciongeneral{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    #contenedor-menu figure{
+        
+        display: none;
+        
+    }
+
+    #contenedor-menu{
+        background-color: #53ff436f;
+        height: auto;
+    }
+    #contenedor-menu #cerrar{
+        
+        display:none;
+    }
+
+    
+    #contenedor-menu #contenedor-enlaces  ul {        
+         height: auto;           
+    }
+
+    #contenedor-enlaces #navegacion, #contenedor-enlaces #navegacion2{
+        padding-left: 2em;
+        background-color: #53ff436f;
+    }
+    
+    #contenedor-enlaces ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contenedor-enlaces li{
+        flex-wrap: wrap-reverse;
+        height: auto;
+    }
+
+    #contenedor-enlaces li a{
+        padding-right: 1em;
+        height: auto;
+    }
+    
+    #contenedor-menu ul {        
+        transition: 0s;    
+        height: auto;
+    }
+
+    #contenedor-enlaces #navegacion li, #contenedor-enlaces #navegacion2 li {
+        
+        width: auto;
+        height: auto;
+    }
+
+    #contenedor-enlaces{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 99vw;
+        height: auto;
+        
+    }
+    #navegacion, #navegacion2{
+        align-items: stretch;
+        height: auto;
+        text-align: center;
+    }
+    
+
+    .titulo2{
+        padding-top: 1em;
+        text-align: center;
+        
+    }
+    
+    
+    #navegacion2{
+        justify-content: flex-end;
+        margin-left:33vw;
+    }
+    #contenedor-menu:target #navegacion, #contenedor-menu:target #navegacion2{
+        transition: 0s;   
+        height: auto;
+    }
+    
+
+    nav li {
+        padding-bottom: 0.01em;
+        margin-top: 0.2em;      
+    }
+
+
+    nav a {
+        font-size: 1em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        padding-top: 0.5em ;
+        padding-bottom: 0.5em ;
+        
+    }
+
+    #contenedor-menu #contenedor-enlaces li :hover, #contenedor-menu #contenedor-enlaces li :focus{
+        background-color: rgb(4, 4, 4);
+        transition: 0.5s;
+    }
+
+    .articleDeSection2 p{
+        font-size: 1.2em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    footer h2{
+        padding: 0.5em;
+        font-size: 2em;
+    }
+
+    footer h3{
+        padding: 0.5em;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        
+    }
+
+    footer section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer{
+        padding-top: 1.5em;
+        padding-bottom: 3em;
+    }
+
+
+    footer section .articledefooter1{
+        
+        padding-left: 6em;   
+        text-align: justify;
+          
+    }
+
+    footer section .articledefooter1 article{
+        background-color: rgba(0, 255, 255, 0);
+        padding-left: 7vw;
+    }
+
+    footer section .articledefooter1 p{
+        font-size: 1.3em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+
+    footer section .articledefooter1 article a, footer section .articledefooter1 article p{
+        display: inline;
+        vertical-align: middle;
+        
+    }
+
+    footer section .articledefooter1 article{
+        padding-top: 1em;
+        background-color: rgba(250, 235, 215, 0);
+    }
+
+    footer section .footerimg figure{
+        width: 35vw;
+        height: 30vh;
+        padding-top: 1em;
+        
+    }
+
+    footer section .footerimg{
+        background-color: rgba(250, 235, 215, 0);
+        
+    }
+
+
+    footer section .footerimg figure img{
+        width: 100%;
+        height: 100%;
+        border: 1em;
+        border-radius: 1em;
+    }
+
+
+    /*---------------Galeria de Imagenes responsibe para 1024px en adelante----------------*/
+
+        .galeriaImagenes{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .galeriaImagenes figure{
+            width: 20em;           
+            border: solid 0.2em rgba(0, 0, 0, 0.651);
+            border-radius: 1em;            
+            padding-bottom: 0.5em;
+        }
+
+        .galeriaImagenes figure img{
+            width: 97%; 
+            height: 97%;  
+            padding: 1.2% 1.2% 0% 1.2%;  
+            border-radius: 1em 1em 0em 0em;      
+            
+        }
+
+        .galeriaImagenes figure figcaption{
+            font-size: large;    
+        }
+
+        
+    /*---------------Galeria de Imagenes responsibe para 1024px en adelante----------------*/
+
+    /*----------------------------Columnas responsibe para 1024px en adelante--------------------------*/
+    .seccion1 {
+        
+        column-count:2;
+        text-align: justify;
+        column-gap: 1%;
+        padding: 0.7em;
+        text-indent: 0.2em;
+        font-size: 1.2em;
+        
+    
+    }
+
+    .seccion1 h2{
+        text-align: center;
+        padding-bottom: 0.7em;
+    }
+
+
+    .seccion2{
+        column-count: 2 ;
+        text-align: justify;
+        column-gap: 1%;
+        padding: 1em;
+        text-indent: 0.2em;
+        font-size: 1.2em;
+    }
+
+    .seccion2 .articleDeSection2 ul li{ 
+        padding-bottom: 0.6em;
+        font-size: 1.1em;
+    }
+
+    .listass article p{
+        font-size: 1.1em;
+    }
+    /*----------------------------Tablas responsibe para 1024px en adelante--------------------------*/
+    
+    table{
+        text-align: center;
+     }   
+     caption h2{
+        padding-top: 1em;
+     }
+ 
+    .titulostabla, tr{
+        display: table-row;   
+    }   
+    
+
+    td:nth-child(odd)::before, td:nth-child(even)::before{
+        display: none;   
+    }
+    th:nth-child(odd)::before, th:nth-child(even)::before{
+        display: none;
+          
+    }
+    
+   
+
+   
+
+         
+    
+   
+
+
+    /*----------------------formulario responsibe para 1024px---------------------*/
+
+    /*
+    form {
+        width: 70%;
+        margin: 0 auto;       
+        
+    }
+    form legend{
+        font-size: 1.5em;
+        padding: 1em;
+    }
+    
+    form input[type=text], form input[type=email], form input[type=date], form label {
+        display:inline-block;
+        font-size: 1.5em;
+        padding: 0.2em;
+        width: 59%;
+        margin: 0.2em;
+    }
+    form label{
+        width: 26%;
+        display: inline-block;
+        padding-left: 1em;
+        text-align: center;
+        
+    }
+    .labeltextarea textarea{
+        vertical-align: middle;
+    }
+    
+    
+    form .botonesformu {
+        display:inline-block;
+        width: 48%;
+        padding: 0.3em;
+        font-size: 1.5em;
+        margin-bottom: 1vh;
+        margin: 0 auto;
+        margin: 0.2em;
+        
+    }
+    form input[type=reset]{
+        padding-top: 0.4em;
+    }
+    .h2form{
+        padding: 1em;
+        font-size: 2em;
+    }
+    */
+    
+   .formulario{
+    width: 50%;
+   }
+
+   .sectiondeliniciosecion{
+    padding: 3em;
+    
+   }
+    
+   #contenido{
+    width: 100%;
+   }
+
+   
+}
